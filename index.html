@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produção Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>EcoProdução</h1>
+        <p>O desafio de produzir mais preservando o nosso planeta.</p>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>O Grande Equilíbrio</h2>
+            <p>Até 2050, a população mundial precisará de mais alimentos, energia e bens de consumo. Mas como fazer isso sem esgotar os recursos naturais? A resposta está na <strong>tecnologia sustentável</strong> e na <strong>economia circular</strong>.</p>
+        </section>
+
+        <section class="simulador">
+            <h2>Simulador de Decisões Sustentáveis</h2>
+            <p>Escolha uma ação abaixo e veja o impacto imediato nos níveis de Produção e Preservação:</p>
+            
+            <div class="botoes-acao">
+                <button onclick="tomarDecisao('agrofloresta')">Implementar Agrofloresta</button>
+                <button onclick="tomarDecisao('Agrotóxicos')">Uso Intensivo de Agrotóxicos</button>
+                <button onclick="tomarDecisao('energia')">Migrar para Energia Solar</button>
+                <button onclick="tomarDecisao('maquinas')">Automação de Máquinas Comuns</button>
+            </div>
+
+            <div class="status-container">
+                <div class="barra-grupo">
+                    <label>Nível de Produção: <span id="val-producao">50%</span></label>
+                    <div class="barra-fundo">
+                        <div id="barra-producao" class="barra-preenchimento producao" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="barra-grupo">
+                    <label>Preservação Ambiental: <span id="val-ambiente">50%</span></label>
+                    <div class="barra-fundo">
+                        <div id="barra-ambiente" class="barra-preenchimento ambiente" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p id="feedback" class="feedback">Clique em uma decisão para começar a simular!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para um futuro mais verde.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
